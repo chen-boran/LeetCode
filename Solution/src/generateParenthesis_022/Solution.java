@@ -7,13 +7,15 @@ import java.util.List;
  * @author ASUS
  * @ 2021/11/18- 15:39
  */
+
 class Solution {
-    static List<String> ans = new ArrayList<String>();
+    List<String> ans = new ArrayList<String>();
     static void dfs(int n,int l,int r,String s)
     {
         if(l == r && l == n)
         {
-            ans.add(s);
+            String ans=new String();
+            ans.length();
             return ;
         }
         if(l < n) dfs(n,l + 1,r,s + "(");
