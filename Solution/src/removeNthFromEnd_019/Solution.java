@@ -21,7 +21,7 @@ class ListNode {
         this.next = next;
     }
 }
-
+//使用遍历函数获取链表的长度，需要遍历多次，不是进阶
 public class Solution {
 
 
