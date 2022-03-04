@@ -7,9 +7,11 @@ public class Text {
 
         int i = 100;
         //String binStr = Integer.toBinaryString(i);
-        String otcStr = Integer.toOctalString(i);
+        //String otcStr = Integer.toOctalString(i);
         //String hexStr = Integer.toHexString(i);
-        System.out.println(otcStr);
+        //System.out.println(otcStr);
+        int a=3,b=0,c=5;
+        System.out.println(a<b!=b<=2);
 
     }
 }
