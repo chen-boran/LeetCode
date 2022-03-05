@@ -19,6 +19,7 @@ class Solution {
             }
         }
         int count = 0;
+
         int sum2 = 0;
         for (int i = 0; i < nums3.length ; i++) {
             for (int j = 0; j < nums4.length; j++) {
