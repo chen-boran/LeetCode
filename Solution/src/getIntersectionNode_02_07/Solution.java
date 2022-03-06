@@ -18,6 +18,17 @@ next = null;
 }
 }
 
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         int La =0;
@@ -32,6 +43,17 @@ public class Solution {
         while (tmp2.next!= null){
             Lb++;
             tmp2=tmp2.next;
+        }
+
+        if (Lb > La) {
+            //1. swap (lenA, lenB);
+            int tmpLen = La;
+            La = Lb;
+            Lb = tmpLen;
+            //2. swap (curA, curB);
+            ListNode tmpNode = tmp1;
+            tmp1 = tmp2;
+            tmp2 = tmpNode;
         }
         int gap = La-Lb;
         // 让curA和curB在同一起点上（末尾位置对齐）
